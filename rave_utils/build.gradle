@@ -1,5 +1,6 @@
  apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
+ apply plugin: 'kotlin-android'
+ apply plugin: 'com.github.dcendents.android-maven'
 group = 'com.github.flutterwave'
 
 android {
@@ -52,4 +53,10 @@ dependencies {
 
     implementation project(':rave_remote')
     implementation project(':rave_logger')
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
+ repositories {
+     maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
+     mavenCentral()
+ }

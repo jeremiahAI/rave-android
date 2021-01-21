@@ -15,7 +15,6 @@ public class Event {
     public static String EVENT_TITLE_LIST_ITEM_SELECTED = "List Option Selected";
 
     String language = "Android";
-    private String version = BuildConfig.VERSION_NAME; //version of the sdk
     private String publicKey;
     private String title;
     private String message;
